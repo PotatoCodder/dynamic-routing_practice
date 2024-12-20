@@ -10,7 +10,6 @@ export default function Home() {
     <div className="flex items-center justify-center min-h-screen bg-gradient-to-r from-blue-100 to-purple-50">
       <div className="w-full max-w-md p-8 bg-white rounded-xl shadow-lg">
         <h1 className="text-3xl font-bold text-center mb-8 text-indigo-600">Book Explorer</h1>
-        <form className="space-y-6">
           <div className="relative">
             <input 
               type="text"
@@ -27,11 +26,10 @@ export default function Home() {
           </div>
           <Link 
             href={`/books/${bookName}/`}
-            className="block w-full px-4 py-3 text-lg font-semibold text-white bg-indigo-600 rounded-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition duration-200 text-center"
+            className="mt-5 block w-full px-4 py-3 text-lg font-semibold text-white bg-indigo-600 rounded-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition duration-200 text-center"
           >
             Discover Books
           </Link>
-        </form>
       </div>
     </div>
   );
